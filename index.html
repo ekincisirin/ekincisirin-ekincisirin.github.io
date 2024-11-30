@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ülke/Şehir Saat Farkı</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Stil dosyasını bağla -->
+</head>
+<body>
+    <div class="container">
+        <h1>Ülke ve Şehir Saat Farkı Hesaplama</h1> <!-- Başlık -->
+        <form id="time-form"> <!-- Saat hesaplama formu -->
+            <label for="city1">Birinci Bölge (Ülke/Şehir):</label>
+            <select id="city1">
+                <option value="">Seçiniz</option> <!-- Kullanıcı seçim yapacak -->
+            </select>
+            <br><br>
+            <label for="city2">İkinci Bölge (Ülke/Şehir):</label>
+            <select id="city2">
+                <option value="">Seçiniz</option> <!-- Kullanıcı seçim yapacak -->
+            </select>
+            <br><br>
+            <button type="button" id="calculate">Hesapla</button> <!-- Hesaplama butonu -->
+        </form>
+        <div class="results">
+            <h2>Sonuçlar:</h2> <!-- Sonuçlar başlığı -->
+            <p><strong>Birinci Bölge Saati:</strong> <span id="city1-time" class="digital-clock">--:--:--</span></p>
+            <p><strong>İkinci Bölge Saati:</strong> <span id="city2-time" class="digital-clock">--:--:--</span></p>
+            <p><strong>Zaman Farkı:</strong> <span id="time-difference">-</span> saat</p>
+            <p><strong>Zaman farkını görmek için hesapla tuşuna basınız</strong></p> <!-- Kullanıcıya açıklama -->
+        </div>
+    </div>
+    <script src="script.js"></script> <!-- JavaScript dosyasını bağla -->
+</body>
+</html>
